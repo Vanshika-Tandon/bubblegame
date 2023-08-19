@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main
+{
+    background-color: rgb(143, 202, 143);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+}
+#panel{
+
+    overflow: hidden;  /*if the ptop is overflowing, the part that goes out from the radius of the main panel gets hidden, */
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+#ptop{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20%; /*reason for space from the two ends of the panel*/
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(72, 102, 56);
+}
+.elem
+{
+    display: flex;
+    align-items: center; /*along the xaxis*/
+    gap: 20px; 
+    
+}
+.box
+{ padding: 10px 20px; /*reason for the shape of the box*/
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(72, 102, 56);
+    font-size: 25px;
+    font-weight: 700;
+}
+#pbot
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+     padding: 10px;
+    width: 100%;
+    height: calc(100% - 80px); /*function needed to subtract px from percentage*/
+}
+
+.bubble
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    width:30px;
+    height: 30px;
+    background-color: rgb(107, 167, 107);
+    color: white;
+    font-weight: 500;
+    border-radius: 50% ; /*half the heigth and the width to make it a circle*/
+}
+
+.bubble:hover
+{
+    cursor: pointer;
+    background-color: rgb(66, 112, 66);
+}
